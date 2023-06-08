@@ -10,12 +10,6 @@ class TabelPasien extends DB
 		return $this->execute($query);
 	}
 
-	function getDetail($i)
-	{
-		$query = "SELECT * FROM pasien WHERE id = '$i'";
-		return $this->execute($query);
-	}
-
 	function addData($data)
 	{
 		$nik = $data['nik'];
